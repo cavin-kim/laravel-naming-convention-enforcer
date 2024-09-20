@@ -1,0 +1,21 @@
+{
+    "name": "vendor/k-phiri",
+    "description": "A Laravel package to enforce naming conventions.",
+    "type": "library",
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vendor\\KPhiri\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vendor\\KPhiri\\KPhiriServiceProvider"
+            ]
+        }
+    }
+}
