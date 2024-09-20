@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 class KPhiriServiceProvider extends ServiceProvider
 {
     protected $commands = [
-        \App\Console\Commands\EnforceNamingConventions::class,
+        \Vendor\KPhiri\Console\Commands\EnforceNamingConventions::class,
     ];
     public function register()
     {

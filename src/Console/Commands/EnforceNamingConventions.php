@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Vendor\KPhiri\Console\Commands;
 
 use Illuminate\Console\Command;
 use Vendor\KPhiri\NamingConventionEnforcer;
