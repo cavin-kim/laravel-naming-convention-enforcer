@@ -17,5 +17,13 @@
                 "Vendor\\KPhiri\\KPhiriServiceProvider"
             ]
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/cavin-kim/laravel-naming-convention-enforcer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
