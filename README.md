@@ -6,7 +6,7 @@ KPhiri is a Laravel package that enforces naming conventions for your Laravel ap
 - Controllers are plural and follow the SomeModelController convention (e.g., UsersController, PostsController)
 - Resource routes are properly named, matching the plural form of controllers.
 
-# Features
+# Features  
 
 Automatically checks and enforces singular model names.
 Ensures plural controller names (e.g., UsersController for the User model).
