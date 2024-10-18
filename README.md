@@ -1,35 +1,43 @@
 # KPhiri: Laravel Naming Convention Enforcer
 
-KPhiri is a Laravel package that enforces naming conventions for your Laravel application's models, controllers, and routes. It automatically ensures that:
+KPhiri is a Laravel package that enforces naming conventions for your Laravel application's models, controllers, and routes. It ensures your application structure follows these best practices:
 
-- Models are singular (e.g., User, Post)
-- Controllers are plural and follow the SomeModelController convention (e.g., UsersController, PostsController)
-- Resource routes are properly named, matching the plural form of controllers.
+- **Models are singular** (e.g., `User`, `Post`)
+- **Controllers are plural** and follow the `SomeModelController` convention (e.g., `UsersController`, `PostsController`)
+- **Resource routes** are automatically named according to the plural form of controllers.
 
-# Features  
+With zero manual configuration required, KPhiri helps you maintain a clean and organized project structure effortlessly!
 
-Automatically checks and enforces singular model names.
-Ensures plural controller names (e.g., UsersController for the User model).
-Automatically registers resource routes with correct naming conventions.
+## Features
 
-- Zero manual configuration is required. Once installed, the package handles everything automatically.
+- Automatically checks and enforces **singular model names**.
+- Ensures **plural controller names** (e.g., `UsersController` for the `User` model).
+- Automatically registers **resource routes** with correct naming conventions.
 
-# Requirements
+## Requirements
 
-PHP 7.4 or 8.0+
-Laravel 8.x, 9.x, or 10.x 
+- **PHP 7.4** or **8.0+**
+- **Laravel 8.x**, **9.x**, or **10.x**
 
-# Installation
-1. Add the Package to Your Project
-Run the following command to install the package using Composer:
+## Installation
 
-- composer require vendor/k-phiri
-- Auto-Discovery
-No need to manually register the service provider. The package uses Laravel's auto-discovery feature, so the service provider will be automatically registered when you install the package.
+To install the package, follow these steps:
 
-# Running the Naming Convention Enforcer
+1. Add the package to your project using Composer. Run the following command:
 
-- php artisan naming:enforce
+   ```bash
+   composer require vendor/k-phiri
 
-# License
-- This package is open-sourced software licensed under the MIT license.
+## Usage
+
+Once the package is installed, you can enforce naming conventions by running the following Artisan command:
+
+```bash
+php artisan naming:enforce
+```
+
+This command will check your application's structure and enforce the naming conventions.
+
+## License
+
+This package is licensed under the MIT License. See the LICENSE file for more details.
