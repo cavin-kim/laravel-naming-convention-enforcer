@@ -1,21 +1,39 @@
 {
-    "name": "vendor/k-phiri",
+    "name": "laravel/laravel",
     "description": "A Laravel package to enforce naming conventions.",
-    "type": "library",
+    "type": "project",
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0|^9.0|^10.0"
+        "laravel/framework": "^8.0|^9.0|^10.0",
+        "cavin-kim/laravel-naming-convention-enforcer": "*"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/cavin-kim/laravel-naming-convention-enforcer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Vendor\\KPhiri\\": "src/"
+            "App\\": "app/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "php artisan package:discover --ansi"
+        ]
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "Vendor\\KPhiri\\KPhiriServiceProvider"
-            ]
+            "dont-discover": []
         }
     }
 }
